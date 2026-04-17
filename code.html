@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Uttar: A Sanctuary for the Soul - Design Showcase</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts for Uttar Heritage Style -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'uttar-clay': '#BC6C4D',
+            'uttar-sand': '#F9F6F2',
+            'uttar-cream': '#FAF9F6',
+            'uttar-charcoal': '#2D2D2D',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-typography">
+    .font-heritage-serif { font-family: 'Playfair Display', serif; }
+    .font-heritage-sans { font-family: 'Inter', sans-serif; }
+    .italic-accent { font-style: italic; }
+  </style>
+<style data-purpose="layout-animations">
+    .screen-card {
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+    }
+    .screen-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 25px 50px -12px rgba(188, 108, 77, 0.2);
+    }
+    /* Custom shadow for the "heritage" feel */
+    .heritage-shadow {
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-uttar-sand text-uttar-charcoal font-heritage-sans antialiased">
+<!-- BEGIN: Navigation -->
+<nav class="sticky top-0 z-50 bg-uttar-sand/80 backdrop-blur-md border-b border-uttar-clay/10 py-4">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<span class="font-heritage-serif text-2xl font-bold text-uttar-clay italic">Uttar</span>
+</div>
+<div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium text-uttar-charcoal/70">
+<a class="hover:text-uttar-clay transition-colors" href="#">Home</a>
+<a class="hover:text-uttar-clay transition-colors underline underline-offset-8 decoration-uttar-clay" href="#">Showcase</a>
+<a class="hover:text-uttar-clay transition-colors" href="#">About</a>
+</div>
+<button class="bg-uttar-clay text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all shadow-md">
+        Get Started
+      </button>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Header -->
+<header class="pt-20 pb-16 px-6 text-center max-w-4xl mx-auto" data-purpose="hero-section">
+<span class="text-uttar-clay font-medium tracking-widest uppercase text-xs mb-4 block">Product Overview</span>
+<h1 class="font-heritage-serif text-5xl md:text-6xl font-bold mb-6 text-uttar-charcoal leading-tight">
+      Uttar: A Sanctuary for the <span class="italic italic-accent font-normal border-b-2 border-uttar-clay/30">Soul</span>
+</h1>
+<p class="text-lg md:text-xl text-uttar-charcoal/60 font-light leading-relaxed">
+      A comprehensive look at our Home, Resource Library, and Support Chat experiences. Designed to bring digital serenity to the modern mind.
+    </p>
+</header>
+<!-- END: Hero Header -->
+<!-- BEGIN: Design Showcase Grid -->
+<main class="max-w-[1440px] mx-auto px-6 pb-24" data-purpose="product-showcase">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Screen 1: Home (Main Focus) -->
+<div class="lg:col-span-7 flex flex-col space-y-6" data-purpose="screen-container-home">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-br from-uttar-clay/20 to-transparent rounded-2xl blur-xl opacity-50"></div>
+<div class="relative screen-card bg-white rounded-xl overflow-hidden heritage-shadow border border-gray-100">
+<!-- Label for Screen -->
+<div class="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full shadow-sm">
+<span class="text-[10px] uppercase tracking-tighter font-bold text-uttar-clay">Experience Home</span>
+</div>
+<!-- Mockup Screenshot -->
+<img alt="Uttar Home Screen" class="w-full h-auto object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBISIirCjlerGpWB8N6xc0WsC2yKZKQkk7cjolhs0AwMoibWjrvkSQHuMW8iO-kCgjgfJz10TLgvXkevX7MyWmvxTt-vReKdEXvdIMkXbqeaJ2ekSCZWlgV_cew_enakN5AmCsxHLeEMVEUHJyRU4T_4hlWy6or2Uiwrd5uqdtiD_TbfUQzztW2mYa92kvEFaPDFLRl983BHmss51l8dO66cB6vFGCGey0HAveEdmrMlLksvqtnq4HEUZGirY9GGK9shslBXdL0j1w"/>
+</div>
+</div>
+<div class="px-2">
+<h3 class="font-heritage-serif text-2xl font-bold text-uttar-charcoal">The Digital Sanctuary</h3>
+<p class="text-sm text-uttar-charcoal/60 mt-1 max-w-lg">Our Home experience prioritizes warmth and emotional safety, featuring a "Digital Sanctuary" design that invites immediate calm upon entry.</p>
+</div>
+</div>
+<!-- Right Column for secondary screens -->
+<div class="lg:col-span-5 space-y-16">
+<!-- Screen 2: Resource Library -->
+<div class="flex flex-col space-y-6" data-purpose="screen-container-resources">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-bl from-uttar-clay/10 to-transparent rounded-2xl blur-lg opacity-40"></div>
+<div class="relative screen-card bg-white rounded-xl overflow-hidden heritage-shadow border border-gray-100">
+<div class="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full shadow-sm">
+<span class="text-[10px] uppercase tracking-tighter font-bold text-uttar-clay">Resource Library</span>
+</div>
+<img alt="Uttar Resource Library Screen" class="w-full h-auto object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiGKIbI1_dMfGFLytx2Pgj3dYBALuNRaMRhKALc1TLh9oL7g6HkirhwnA6amRC9Ix-wQpbBEaVdmGz6uFXIAAXYe0lF0LHGdiWb48UGZZRCtl5wZFMn-F5rsYPPASQ5Uid_67d5Z1PK_sonZ6RJ7jueO6Etbna3p4jxTWPO_7NoR97MPh4EI1VUTqWZHXVKt6oNH7u7OvWmUk3nhcJvs7mKskOkIHzA_og_c_7imKvY81pOpedXNRe-t0rm4zwA1x13lN-GYbzL0Y"/>
+</div>
+</div>
+<div class="px-2">
+<h3 class="font-heritage-serif text-xl font-bold text-uttar-charcoal">Curated Wisdom</h3>
+<p class="text-sm text-uttar-charcoal/60 mt-1">A hand-picked collection of insights and exercises designed to nurture the emotional landscape with a focus on mindfulness and daily resilience.</p>
+</div>
+</div>
+<!-- Screen 3: Support Chat -->
+<div class="flex flex-col space-y-6" data-purpose="screen-container-chat">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-tr from-uttar-clay/10 to-transparent rounded-2xl blur-lg opacity-40"></div>
+<div class="relative screen-card bg-white rounded-xl overflow-hidden heritage-shadow border border-gray-100">
+<div class="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full shadow-sm">
+<span class="text-[10px] uppercase tracking-tighter font-bold text-uttar-clay">Empathetic Chat</span>
+</div>
+<img alt="Uttar Support Chat Screen" class="w-full h-auto object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBDhZLb87k6BPuXI_zkcRKVDnRQD3vapzKQhzwVHfLVUE9Te9UoP-qBdhQLOICgyD_ciPF5YyI6pPY6qSafDT1O5CXAApvF8h_D66mEavehEiRRyeGZmdEwItvd8z5br3A-x2pebtB-zyvgQw0Rdy-fk0jELo_7Rg-hadSpmE4vg_0LxXp15l8g8bKHUqNl_ZxkpFnKX2yZnGxqdGBk-HFn793g3Jb72SG0lVzOulH5RTnz2WFujoaRFR0P28s36Z3dxPt9cd2ilY"/>
+</div>
+</div>
+<div class="px-2">
+<h3 class="font-heritage-serif text-xl font-bold text-uttar-charcoal">Intuitive Support</h3>
+<p class="text-sm text-uttar-charcoal/60 mt-1">Our conversational AI interface provides a safe, end-to-end encrypted space to 'type your heart out' and find immediate clarity.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- END: Design Showcase Grid -->
+<!-- BEGIN: Call to Action Footer -->
+<section class="bg-uttar-cream py-20 px-6 border-t border-uttar-clay/10" data-purpose="footer-cta">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-heritage-serif text-3xl md:text-4xl font-bold text-uttar-charcoal mb-8 italic italic-accent">Bringing balance back to the digital life.</h2>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<a class="w-full sm:w-auto px-10 py-4 bg-uttar-clay text-white rounded-full font-medium shadow-lg hover:shadow-uttar-clay/20 transition-all hover:-translate-y-0.5" href="#">Explore Full Case Study</a>
+<a class="w-full sm:w-auto px-10 py-4 border border-uttar-clay text-uttar-clay rounded-full font-medium hover:bg-uttar-clay/5 transition-all" href="#">Download Assets</a>
+</div>
+</div>
+</section>
+<!-- END: Call to Action Footer -->
+<!-- BEGIN: Simple Footer -->
+<footer class="bg-white py-12 px-6" data-purpose="main-footer">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-uttar-charcoal/40 text-xs tracking-widest uppercase font-medium">
+<p>© 2024 Uttar AI. Crafted for emotional wellbeing.</p>
+<div class="flex space-x-6 mt-6 md:mt-0">
+<a class="hover:text-uttar-clay" href="#">Privacy</a>
+<a class="hover:text-uttar-clay" href="#">Terms</a>
+<a class="hover:text-uttar-clay" href="#">Crisis Resources</a>
+</div>
+</div>
+</footer>
+<!-- END: Simple Footer -->
+</body></html>

@@ -1,0 +1,9 @@
+node_modules/
+.env
+dist/
+build/
+.DS_Store
+cloudflared.exe
+server_stderr.log
+server_stdout.log
+key
